@@ -1,4 +1,7 @@
-import sys, random
+'''This module implements a random name generator.'''
+
+import sys
+import random
 
 WELCOME_MESSAGE = "Welcome to the Psych 'Sidekick Name Picker.'\n" + \
                   "A name just like Sean would pick for Gus:\n"
@@ -37,13 +40,14 @@ last = ('Appleyard', 'Bigmeat', 'Bloominshine', 'Boogerbottom',
 names = (first, last)
 
 def main():
+    '''Generates random pseudonyms until the user quits.'''
     print(WELCOME_MESSAGE)
     while True :
         user_choice = input('generate new pseudonym? [y/n]: ')
         if user_choice.lower() in ('n', 'no'):
             break
         generated_name = ' '.join([random.choice(names_tuple) for names_tuple in names])
-        print('Generated name : {}\n'.format(generated_name), file=sys.stderr)
+        print(f'Generated name : {generated_name}\n', file=sys.stderr)
 
 if __name__ == '__main__' :
     main()
