@@ -19,7 +19,7 @@ def load_words(file_name : str) -> List[str]:
             file_content = [x.strip() for x in file.readlines()]
 
     except (FileNotFoundError, IOError) as error:
-        print(FILE_READ_ERROR_TEMPLATE.format(error, file_name))
+        print(FILE_READ_ERROR_TEMPLATE.format(error))
 
     return file_content
 
