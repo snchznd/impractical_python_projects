@@ -4,7 +4,7 @@ out the words that are not palindromes. This implementation is recursive."""
 from typing import List
 
 FILE_READ_ERROR_TEMPLATE = 'ERROR: {0}'
-SOURCE_FILE = 'words_dict.txt'
+SOURCE_FILE = '..\\data\\words_dict.txt'
 
 def load_words(file_name : str) -> List[str]:
     """Function that loads the content of a file, line by line in a safe way 

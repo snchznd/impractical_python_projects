@@ -7,7 +7,7 @@ from typing import List, Set
 from tqdm import tqdm
 
 FILE_READ_ERROR_TEMPLATE = 'ERROR: {0}'
-SOURCE_FILE = 'words_dict.txt'
+SOURCE_FILE = '..\\data\\words_dict.txt'
 WRITE_FILE = 'palingrams_faster.txt'
 DEBUGG_STRING = 'added word {} - at index {} - resulting in {}\n'
 
